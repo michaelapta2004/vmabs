@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/example/App">
+    <file>window.ui</file>
+    <file>gtk/help-overlay.ui</file>
+    <file>login.css</file>
+    <file>register.ui</file>
+  </gresource>
+</gresources>

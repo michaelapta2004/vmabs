@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  
+  <template class="VmabsRegister" parent="GtkApplicationWindow">
+    <property name="default-width">360</property>
+    <property name="default-height">800</property>
+
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Let us know about you </property>
+            <property name="name">titletxt1</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="username_entry">
+            <property name="placeholder-text">Username</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="phone_entry">
+            <property name="placeholder-text">Phone</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="email_entry">
+            <property name="placeholder-text">Email</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="password_entry">
+            <property name="placeholder-text">Password</property>
+            <property name="visibility">false</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="register_button">
+            <property name="label">Register</property>
+            <property name="name">regisbut</property>
+            <signal name="clicked" handler="on_register_button_clicked"/>
+          </object>
+        </child>
+
+       <child>
+         <object class="GtkLabel">
+           <property name="label">sudah punya akun ?</property>
+         </object>
+       </child>
+
+       <child>
+         <object class="GtkButton" id="login_button">
+           <property name="label">Login</property>
+           <signal name="clicked" handler="on_login_button_clicked"/>
+         </object>
+       </child>
+
+      </object>
+    </child>
+  </template>
+</interface>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <widget class="QWidget" name="MinecraftServerConsole">
+ <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+ </property>
+ <property name="windowTitle">
+   <string>Minecraft Server Console</string>
+ </property>
+ <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="serverInfoLabel">
+     <property name="text">
+      <string>John Doe
+John.doe2@gmail.com
+John Doe Server
+Online Player: 10 / 50
+Server Address: 35.186.153.241
+Gamemode: Survival
+Version: Vanilla 1.20.1
+Server
+Server OFF
+Delete Server Clear World</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="playerCountLabel">
+     <property name="text">
+      <string>Players
+Console
+88
+Mods</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+ </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  
+  <template class="VmabsWindow" parent="GtkApplicationWindow">
+    <property name="default-width">360</property>
+    <property name="default-height">800</property>
+
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Hi, Welcome to </property>
+            <property name="name">titletxt1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Auto Build Server for Minecraft</property>
+            <property name="name">titletxt2</property>
+
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="email_entry">
+            <property name="placeholder-text">Email</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="password_entry">
+            <property name="placeholder-text">Password</property>
+            <property name="visibility">false</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="login_button">
+            <property name="label">Login</property>
+            <property name="name">loginbut</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="register_button">
+            <property name="label">Register</property>
+            <property name="name">regisbut</property>
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+</interface>
